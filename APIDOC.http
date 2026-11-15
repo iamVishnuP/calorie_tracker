@@ -1,0 +1,43 @@
+#------------------ ACCOUNT REG ----------------------#
+
+# api call to register user
+###
+POST http://127.0.0.1:8000/user/register/
+Content-Type: application/json
+
+{
+    "username":"vishnu",
+    "email":"vishnu@gmail.com",
+    "password":"vishnu@123",
+    "age":22,
+    "height":173,
+    "weight":56,
+    "dob":"2004-07-07",
+    "phone":"9037011230"
+
+}
+
+
+#------------------ CALORIES ----------------------#
+
+# api call to list 
+###
+GET  http://127.0.0.1:8000/calories/
+Accept : application/json
+Authorization: Basic vishnu:vishnu@123
+
+# api call to create 
+###
+POST   http://127.0.0.1:8000/calories/
+Content-Type:  application/json
+Authorization: Basic vishnu:vishnu@123
+
+{
+    "title":"Pork",
+    "serving_size":"1",
+    "calorie":360,
+    "meal_type":"lunch"
+}
+
+
+
